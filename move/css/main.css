@@ -1,0 +1,306 @@
+/*css*/
+html,body{
+	margin: 0;
+ 	height: 100%;
+ 	font-size: 62.5%;
+}
+
+.main-wrap{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.main-title{
+	width: 95%;
+	margin: 6rem auto 0 auto;
+	text-align: left;
+	font-size: 5rem;
+	line-height: 4.8rem;
+}
+
+
+/*----------------------------图形以及按钮区---------------------------*/
+.btn-cube-wrap{
+	height: 32rem;
+}
+.btn-wrap,.cube-wrap{
+	display: inline-block;
+	overflow: hidden;
+}
+
+/*---------------表面积、体积按钮---------------*/
+.btn-wrap{
+	float: left;
+	margin-top: 5rem;
+}
+.cube-btn{
+	display: block;
+	width: 28rem;
+	height: 9rem;
+	background: #28abd7;
+	border-radius: 5rem;
+	font-size: 5rem;
+	color: #fff;
+	text-align: center;
+	line-height: 8rem;
+	margin: 3rem 5rem;
+}
+.area-btn{
+	background: url(../img/area-btn.png);
+	background-size: cover;
+	background-position: center;
+}
+.cubage-btn{
+	background: url(../img/cubage-btn.png);
+	background-size: cover;
+	background-position: center;
+}
+
+/*---------------图形区-----------------*/
+.cube-wrap{
+	float: right;
+	width: 42rem;
+	height: 30rem;
+	position: relative;
+	font-size: 5rem;
+}
+.cube-wrap span{
+	display: block;
+	position: absolute;
+	font-size: 5rem;
+	text-align: center;
+}
+
+/*正方体于长方体制作*/
+.cube-box1-front{
+	width: 28rem;
+	height: 12rem;
+	line-height: 20rem;
+	bottom: 0rem;
+	left: 2rem;
+	border: 0.3rem solid #000;
+	border-top: 0;
+	border-right: 0;
+}
+.cube-box1-up{
+	width: 28rem;
+	height: 8rem;
+	bottom: 12.2rem;
+	left: 6.3rem;
+	border: 0.3rem solid #000;
+	border-right: 0;
+	transform: skewX(-46deg);
+	-moz-transform: skewX(-46deg);
+	-webkit-transform: skewX(-46deg);
+	-ms-transform: skewX(-46deg);
+	-o-transform: skewX(-46deg);
+}
+.cube-box1-right{
+	width: 8rem;
+	height: 12rem;
+	bottom: 4rem;
+	right: 3.2rem;
+	border: 0.3rem solid #000;
+	transform: skewY(-45deg);
+	-moz-transform: skewY(-45deg);
+	-webkit-transform: skewY(-45deg);
+	-ms-transform: skewY(-45deg);
+	-o-transform: skewY(-45deg);
+}
+.cube-box2-front{
+	width: 10rem;
+	height: 10rem;
+	line-height: 16rem;
+	bottom: 14.5rem;
+	left: 16rem;
+	border: 0.3rem solid #000;
+}
+.cube-box2-up{
+	width: 10rem;
+	height: 3.5rem;
+	bottom: 25rem;
+	left: 17.9rem;
+	border: 0.3rem solid #000;
+	border-bottom: 0;
+	transform: skewX(-46deg);
+	-moz-transform: skewX(-46deg);
+	-webkit-transform: skewX(-46deg);
+	-ms-transform: skewX(-46deg);
+	-o-transform: skewX(-46deg);
+}
+.cube-box2-right{
+	width: 3.6rem;
+	height: 10rem;
+	bottom: 16.5rem;
+	right: 11.6rem;
+	border: 0.3rem solid #000;
+	border-top: 0;
+	border-left: 0;
+	transform: skewY(-45deg);
+	-moz-transform: skewY(-45deg);
+	-webkit-transform: skewY(-45deg);
+	-ms-transform: skewY(-45deg);
+	-o-transform: skewY(-45deg);
+}
+.cube-box2-left{
+	width: 3.6rem;
+	height: 10rem;
+	bottom: 16.5rem;
+	left: 16.2rem;
+	border: 0.3rem dashed #000;
+	border-top: 0;
+	border-left: 0;;
+	transform: skewY(-45deg);
+	-moz-transform: skewY(-45deg);
+	-webkit-transform: skewY(-45deg);
+	-ms-transform: skewY(-45deg);
+	-o-transform: skewY(-45deg);
+}
+.cube-box2-behind{
+	width: 10rem;
+	height: 10rem;
+	line-height: 16rem;
+	bottom: 18.4rem;
+	right: 11.9rem;
+	border: 0.3rem dashed #000;
+	border-right: 0;
+	border-top: 0;
+}
+.cube-box2-bottom{
+	width: 10rem;
+	height: 3.5rem;
+	bottom: 14.8rem;
+	left: 18.2rem;
+	transform: skewX(-46deg);
+	-moz-transform: skewX(-46deg);
+	-webkit-transform: skewX(-46deg);
+	-ms-transform: skewX(-46deg);
+	-o-transform: skewX(-46deg);
+}
+/*图形设置白色背景颜色*/
+.cube-bg-white{
+	background: #fff;
+}
+/*图形设置红色背景颜色-透明*/
+.cube-bg-red{
+	background-color: rgba(248,0,0,0.4);
+}
+
+/*图形长宽高信息*/
+.cube-box1-height-text{
+	position: absolute;
+	bottom: 0rem;
+	right: 12rem;
+}
+.cube-box1-width-text{
+	position: absolute;
+	bottom: -3rem;
+	right: 1rem;
+}
+.cube-box2-height-text{
+	position: absolute;
+	bottom: 20rem;
+	right: 16rem;
+}
+.cube-box2-width-text{
+	position: absolute;
+	bottom: 15rem;
+	right: 9rem;
+}
+
+/*---------------方法一方法二按钮---------------*/
+.method-btn-wrap{
+	display: none;
+}
+.method-btn{
+	display: inline-block;
+	width: 20rem;
+	height: 8rem;
+	border-radius: 1rem;
+	font-size: 4.5rem;
+	text-align: center;
+	line-height: 8rem;
+	color: #fff;
+	font-weight: bold;
+	margin: 1rem 0 0  3rem;
+	background: #f3b345;
+}
+.method-btn-press{
+	background: #8ac26b;
+}
+
+
+/*----------------------------公式区---------------------------*/
+.small-part-area-title,.small-part-area-title-text,.small-part-area-text{
+	display: none;
+}
+
+
+/*---------------表面积方法一内容---------------*/
+.large-part-area{
+	position: relative;
+}
+.tips-wrap{
+	display: none;
+	width: 20rem;
+	height: 20rem;
+	background: url(../img/tips.png);
+	background-size: 20rem 20rem;
+	position: absolute;
+	top: 7rem;
+	right: 2rem;
+}
+.tips-text{
+	width: 17rem;
+	font-size: 3.4rem;
+	color: #ff7326;
+	margin: 6rem auto;
+	line-height: 4rem;
+}
+.small-part-area,.method-first-sum-area,.large-part-area{
+	margin: 5rem 0 0 0;
+	font-size: 4.6rem;
+}
+.small-part-area-title{
+	margin-left: 2rem;
+}
+.small-part-area-title-text{
+	color: red;
+}
+.small-part-area-text{
+	margin-left: 31rem;
+	color: red;
+}
+
+/*---------------表面积方法二内容---------------*/
+.method-second-sum-area{
+	margin: 5rem 0 0 0;
+	font-size: 5rem;
+}
+.method-second-sum-area .small-part-area-title{
+	margin-left: 4rem;
+	display: none;
+}
+.method-second-sum-area .small-part-area-text{
+	margin-left: 18rem;
+	color: red;
+}
+
+/*---------------体积内容---------------*/
+.small-part-cubage,.large-part-cubage,.method-first-sum-cubage,.sum-cubage{
+	margin: 5rem 0 0 0;
+	font-size: 4.6rem;
+}
+.cubage-warp .small-part-area-title{
+	margin-left: 3rem;
+}
+.cubage-warp .small-part-area-title-text{
+	color: red;
+	letter-spacing: 0.2rem;
+}
+.cubage-warp .small-part-area-text{
+	margin-left: 28.5rem;
+	letter-spacing: 0.5rem;
+	color: red;
+}

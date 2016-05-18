@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="css/main.css" rel="stylesheet">
+	<script src="js/jquery-2.2.3.min.js" type="text/javascript"></script>
+	<script src="js/mainScript.js" type="text/javascript"></script>
+	<title>地推动画</title>
+</head>
+<body>
+	<div class="main-wrap">
+		<p class="main-title">如图示一个机器零件，计算这个零件的表面积和体积</p>
+		<div class="btn-cube-wrap">
+			<span class="btn-wrap">
+				<span class="cube-btn area-btn"></span>
+				<span class="cube-btn cubage-btn"></span>
+			</span>
+			<span class="cube-wrap">
+				<span class="cube-box1 cube-box1-front">6cm</span>
+				<span class="cube-box1 cube-box1-up"></span>
+				<span class="cube-box1 cube-box1-right"></span>
+				<span class="cube-box2 cube-box2-left cube-bg-white"></span>
+				<span class="cube-box2 cube-box2-behind cube-bg-white"></span>
+				<span class="cube-box2 cube-box2-bottom"></span>
+				<span class="cube-box2 cube-box2-front cube-bg-white">2cm</span>
+				<span class="cube-box2 cube-box2-up"></span>
+				<span class="cube-box2 cube-box2-right cube-bg-white"></span>
+				<p class="cube-box1-height-text">2cm</p>
+				<p class="cube-box1-width-text">4cm</p>
+				<p class="cube-box2-height-text">2cm</p>
+				<p class="cube-box2-width-text">2cm</p>
+			</span>
+		</div>
+
+		<div class="method-btn-wrap">
+			<span class="method-btn method-first-btn">方法一</span>
+			<span class="method-btn method-second-btn">方法二</span>
+		</div>
+		<div class="method-first">
+			<div class="small-part-area">
+				<span class="small-part-area-title">上半部分表面积:</span>
+				<span class="small-part-area-title-text">2×2×5</span>
+				<p class="small-part-area-text">=4×5 </p>
+				<p class="small-part-area-text">=20(cm²) </p>
+			</div>
+			<div class="large-part-area">
+				<span class="small-part-area-title">下半部分表面积:</span>
+				<span class="small-part-area-title-text">(6×2+6×4+2×4)×2</span>
+				<p class="small-part-area-text">=(12+24+8)×2-4</p>
+				<p class="small-part-area-text">=44×2-4</p>
+				<p class="small-part-area-text">=88-4</p>
+				<p class="small-part-area-text">=84(㎝²)</p>
+				<span class="tips-wrap">
+					<p class="tips-text">提示：多算了小正方体一个底面的面积</p>
+				</span>
+			</div>
+			<div class="method-first-sum-area">
+				<span class="small-part-area-title">零件的表面积:</span>
+				<span class="small-part-area-title-text">20+84=104(㎝²)</span>
+			</div>
+		</div>
+
+		<div class="method-second">
+			<div class="method-second-sum-area">
+				<span class="small-part-area-title">表面积:</span>
+				<span class="small-part-area-title-text">(6×2+6×4+2×4)×2+2×2×4</span>
+				<p class="small-part-area-text">=(12+24+8)×2+4×4</p>
+				<p class="small-part-area-text">=44×2+16</p>
+				<p class="small-part-area-text">=88+16</p>
+				<p class="small-part-area-text">=104(㎝²)</p>
+			</div>
+		</div>
+
+		<div class="cubage-warp">
+			<div class="small-part-cubage">
+				<span class="small-part-area-title">上半部分体积:</span>
+				<span class="small-part-area-title-text">2×2×2</span>
+				<p class="small-part-area-text">=4×2 </p>
+				<p class="small-part-area-text">=8(㎝³) </p>
+			</div>
+			<div class="large-part-cubage">
+				<span class="small-part-area-title">下半部分体积:</span>
+				<span class="small-part-area-title-text">6×2×4</span>
+				<p class="small-part-area-text">=12×4</p>
+				<p class="small-part-area-text">=48(㎝³)</p>
+			</div>
+			<div class="method-first-sum-cubage">
+				<span class="small-part-area-title">零件的体积:</span>
+				<span class="small-part-area-title-text">8+48=56(㎝³)</span>
+			</div>
+			<div class="sum-cubage">
+				<span class="small-part-area-title">答:</span>
+				<span class="small-part-area-title-text">它的表面积是104㎝²</span>
+				<span class="small-part-area-title-text">它的体积是56㎝³</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
