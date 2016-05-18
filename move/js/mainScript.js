@@ -91,9 +91,25 @@ $(document).ready(function(){
 	$(".method-first .large-part-area").find(".small-part-area-title").click(function(){
 		$(".cube-box1").removeClass("cube-bg-red")
 		var index = 0
+		var largeTimer = setInterval(function(){
+			index += 1
+			if(index == "1"){
+				setTimeout(function(){
+					$(".cube-box1").hide()
+				},300)
+				setTimeout(function(){
+					$(".cube-box1").show()
+				},500)
+				setTimeout(function(){
+					$(".cube-box1").hide()
+				},700)
+				setTimeout(function(){
+					$(".cube-box1").show()
+				},900)
+			}
+		},1000)
 
 	})
-
 	//方法二按钮点击事件
 	$(".method-second-btn").click(function(){
 		$(".method-btn").removeClass('method-btn-press')
